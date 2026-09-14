@@ -58,7 +58,7 @@ flow-state-traffic/
     ```bash
     java -cp out SimulationEngine
     ```
-    *Note: Assume the evaluator has no prior context about your project; these commands will execute the program fully from the terminal[cite: 2]. The directory 'data' and the metrics file will be created on the first run.*
+    *Note: Assume the evaluator has no prior context about your project; these commands will execute the program fully from the terminal. The directory 'data' and the metrics file will be created on the first run.*
 
 ## How to Test
 
