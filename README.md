@@ -23,8 +23,6 @@ This project is a command-line simulation of a dynamic urban traffic grid. It en
 *   No external dependencies or frameworks.
 
 ## Project Structure
-
-
 ```text
 flow-state-traffic/
 ├── src/
@@ -44,10 +42,7 @@ flow-state-traffic/
 │   └── simulation_metrics.log
 ├── README.md
 └── statement.md
-
-
-
-
+```
 ## How to Install and Run
 
 1.  **Install Java 21+ (JDK):** See which version of java is installed by running `java -version` in terminal/command prompt. 
@@ -63,7 +58,7 @@ flow-state-traffic/
     ```bash
     java -cp out SimulationEngine
     ```
-    *Note: Assume the evaluator has no prior context about your project; these commands will execute the program fully from the terminal. The directory 'data' and the metrics file will be created on the first run.*
+    *Note: Assume the evaluator has no prior context about your project; these commands will execute the program fully from the terminal[cite: 2]. The directory 'data' and the metrics file will be created on the first run.*
 
 ## How to Test
 
@@ -78,4 +73,5 @@ The project was hand-tested with a series of commands and configurations being e
 The application can also be tested using a custom configuration file passed as an argument. Example:
 ```bash
 java -cp out SimulationEngine data/test_config.txt
+
 
