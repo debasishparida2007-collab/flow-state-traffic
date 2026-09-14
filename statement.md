@@ -1,18 +1,27 @@
-# Project Statement: Smart City Traffic Simulation Engine
+# Project Statement: Flow State Traffic Simulator
 
 ## Problem Statement
-Urban traffic congestion leads to severe commuter delays and significantly hinders emergency vehicle response times. Static, timer-based traffic light systems are inefficient at handling fluctuating vehicle density and lack the ability to dynamically prioritize critical routing for crisis management, such as ambulances responding to active emergencies.
+
+Traffic jams cause a lot of frustration for drivers.. For emergency vehicles these delays can lead to serious risks. Many traffic lights today operate on fixed timers. That means they don’t respond to traffic conditions. They also can’t respond quickly when an ambulance needs to pass. This results in response times when every second counts.
 
 ## Scope of the Project
-This project is a pure Java, command-line simulation designed to model and analyze autonomous vehicle flow across a customizable city grid. The scope includes building a dynamic intersection management system that calculates real-time wait queues to adjust traffic light states. It strictly focuses on backend logic, object-oriented architecture, and terminal-based metrics generation, without relying on external GUI frameworks or third-party libraries.
+
+I am creating a command-line traffic simulator using Java. No external libraries or graphical user interfaces are allowed. The focus is on the core logic and object-oriented design. The goal is to build an intersection system that tracks waiting cars in real time. It must handle emergency overrides. Log performance data directly to the terminal.
 
 ## Target Users
-* **Urban Planners & Traffic Engineers:** Professionals seeking a theoretical model to test dynamic routing algorithms and intersection efficiency.
-* **Emergency Response Coordinators:** Users analyzing the impact of automated green-light overrides on ambulance transit times.
-* **Academic Evaluators:** Instructors reviewing the application of advanced Java concepts, including inheritance, nested classes, and custom exception handling.
+
+* **Traffic Enthusiasts & City Planners:** People who want to see how dynamic traffic algorithms might improve city flow.
+
+* **Emergency Response Coordinators:** Individuals who care about faster ambulance response times and want to see how automated green-light systems could help.
+
+* **Course Evaluators:** Instructors who want to assess my use of Java concepts, like object-oriented programming, custom exceptions and file handling.
 
 ## High-Level Features
-* **Dynamic Intersection Control:** Traffic lights automatically transition states (Red/Yellow/Green) by calculating real-time vehicle density at each node.
-* **Emergency Override Protocol:** The system automatically detects active ambulance entities and forces an immediate green-light sequence to ensure zero-delay routing.
-* **Automated Vehicle Generation:** A configuration-driven engine that spawns civilian and emergency vehicles with validated starting and destination coordinates.
-* **Real-Time Metrics Tracking:** Continuous calculation and logging of total vehicle throughput, active grid population, and average delay times to local system files.
+
+* **Smart Traffic Lights:** The system doesn’t use fixed timers. Instead intersections monitor the number of waiting vehicles. Adjust their Red, Yellow and Green signals dynamically.
+
+* **Ambulance Override:** When an emergency vehicle appears in the simulation the system detects it. Immediately clears the way by forcing a green light sequence.
+
+* **Custom Traffic Generation:** The simulation reads a text file to generate a mix of regular cars and ambulances. Each has a defined starting point and destination.
+
+* **Live Metrics Tracking:** During the simulation the system tracks how many vehicles pass through and calculates their wait time. At the end all data is saved to a log file.
