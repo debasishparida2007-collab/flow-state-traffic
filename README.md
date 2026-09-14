@@ -1,6 +1,6 @@
 # Smart City Traffic Simulation Engine
 
-Smart City Traffic Simulation Engine developed using pure Java (without any external library/frameworks) as part of the project for the Java Course, VITyarthi "Build Your Own Project"
+Smart City Traffic Simulation Engine developed using pure Java (without any external library/frameworks).
 
 ## Description
 
